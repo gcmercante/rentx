@@ -11,7 +11,7 @@ export const AppDataSource = new DataSource({
   logging: false,
   migrations: [`${__dirname}/migrations/*.ts`],
   entities: [
-    `${__dirname}/../modules/cars/entities/*.ts`,
-    `${__dirname}/../modules/accounts/entities/*.ts`,
+    `${__dirname}/../../../modules/cars/infra/typeorm/entities/*.ts`,
+    `${__dirname}/../../../modules/accounts/infra/typeorm/entities/*.ts`,
   ],
 });
