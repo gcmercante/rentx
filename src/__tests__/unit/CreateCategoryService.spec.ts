@@ -1,6 +1,6 @@
-import { CategoryRepositoryInMemory } from '../modules/cars/repositories/inmemory/Category.repository.inmemory';
-import { CreateCategoryService } from '../modules/cars/services/CreateCategory.service';
-import { AppError } from '../shared/errors/AppError';
+import { CategoryRepositoryInMemory } from '../../modules/cars/repositories/inmemory/Category.repository.inmemory';
+import { CreateCategoryService } from '../../modules/cars/services/CreateCategory.service';
+import { AppError } from '../../shared/errors/AppError';
 
 let categoryRepositoryInMemory: CategoryRepositoryInMemory;
 let createCategoryService: CreateCategoryService;

@@ -3,7 +3,7 @@ import { inject, injectable } from 'tsyringe';
 import { AppError } from '../../../shared/errors/AppError';
 import { ISpecificationRepository } from '../repositories/interfaces/ISpecificationRepository';
 
-interface IRequest {
+interface ICreateSpecificationRequest {
   name: string;
   description: string;
 }
@@ -15,7 +15,10 @@ export class CreateSpecificationService {
     private readonly specificationRepository: ISpecificationRepository
   ) {}
 
-  async execute({ name, description }: IRequest): Promise<void> {
+  async execute({
+    name,
+    description,
+  }: ICreateSpecificationRequest): Promise<void> {
     const specificationExists = await this.specificationRepository.findByName(
       name
     );

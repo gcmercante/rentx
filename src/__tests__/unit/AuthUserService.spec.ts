@@ -1,8 +1,8 @@
-import { ICreateUserDto } from '../modules/accounts/dto/ICreateUserDTO';
-import { UserRepositoryInMemory } from '../modules/accounts/repositories/inmemory/User.repository.inmemory';
-import { AuthUserService } from '../modules/accounts/services/AuthUser.service';
-import { CreateUserService } from '../modules/accounts/services/CreateUser.service';
-import { AppError } from '../shared/errors/AppError';
+import { ICreateUserDto } from '../../modules/accounts/dto/ICreateUserDTO';
+import { UserRepositoryInMemory } from '../../modules/accounts/repositories/inmemory/User.repository.inmemory';
+import { AuthUserService } from '../../modules/accounts/services/AuthUser.service';
+import { CreateUserService } from '../../modules/accounts/services/CreateUser.service';
+import { AppError } from '../../shared/errors/AppError';
 
 let userRepository: UserRepositoryInMemory;
 let createUserService: CreateUserService;
